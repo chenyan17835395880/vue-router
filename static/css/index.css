@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    /*list-style: none;*/
+    text-decoration: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.box{
+    width: 820px;
+    margin: 0 auto;
+    background: #ccc;
+}
+/*登录*/
+.login{
+    width: 450px;
+    padding: 10px;
+    margin:50px auto;
+    border:1px solid #CCCCCC;
+    border-radius: 5px ;
+    animation: scale 1s;
+}
+.login .deng{
+    height: 40px;
+    background: #CCCCCC;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.login .bot{
+    width: 100%;
+    background: #CCCCCC;
+    font-size: 18px;
+    color: #000;
+}
+.login .danxuan{
+    margin-top: 10px;
+}
+.login .mes{
+    width: 450px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 5px;
+    margin:5px auto;
+    color:red;
+}
+
+/*info*/
+.info{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top:0;bottom:0;left:0;right:0;margin:auto;
+    background: #CCCCCC;
+    border-radius: 5px;
+    font-size: 20px;
+    color:#000;
+    line-height: 100px;
+    text-align: center;
+    animation: info ease 1.5s;
+}
+
+/*首页*/
+.index{
+    width: 100vw;
+    height:100vh;
+}
+.head{
+    width: 100%;
+    height: 60px;
+    background: #CCCCCC;
+    font-size: 20px;
+    line-height: 60px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head .left{
+    font-size: 20px;
+    line-height: 60px;
+    width: 80px;
+}
+.index .body{
+    width: 100%;height: 100%;
+    padding-top: 60px;
+}
+.index .body .left{
+    width: 17vw;
+    height: 100%;
+    border-right: 1px solid #CCCCCC;
+    font-size: 16px;
+    padding:20px;
+    float:left;
+}
+.index .body .right{
+    width:83vw ;
+    height: 100%;
+    font-size: 16px;
+    padding:2px;
+    float:left;
+    overflow: scroll;
+}
+.left .Left  ul ul{
+    display: block;
+    margin-left: 20px;
+}
+
+@keyframes info {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes scale {
+    from{
+        transform: scale(0,0);
+    }
+    to{
+        transform: scale(1,1);
+    }
+}
+
+.quick{
+    padding:15px;
+    margin-top: 70px;
+}
+
+/*动画*/
+.a-enter {
+    opacity: 0;
+}
+
+.a-enter-active {
+    transition: opacity 1s;
+}
+
+.a-enter-to {
+    opacity: 1;
+}
+
+.a-leave {
+    opacity: 1;
+}
+
+.a-leave-active {
+    transition: opacity 1s;
+}
+
+.a-leave-to {
+    opacity: 0;
+}
+

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"
+       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title>
+ <link rel="stylesheet" href="../static/css/index.css">
+ <link rel="stylesheet" href="../static/css/bootstrap.css">
+ <link rel="stylesheet" href="https://hinesboy.github.io/mavonEditor/dist/markdown/github-markdown.min.css">
+ <script src="../static/js/vue.js"></script>
+ <script src="../static/js/vue-router.js"></script><!--一:引用vue-router.js-->
+ <script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
+ <script src="../static/js/components.js"></script>
+</head>
+<body>
+<div id="box">
+
+   <div class="head">
+     <router-link to="/">
+      <div class="left">文档</div>
+     </router-link>
+    <router-link to="/quick">快速上手</router-link>
+   </div>
+
+   <transition name="a" mode="out-in">
+    <router-view></router-view>
+   </transition><!--二：指定视图出现的位置-->
+
+</div>
+</body>
+
+<script src="../static/js/router.js"></script>
+<script src="../static/js/box.js"></script>
+</html>
